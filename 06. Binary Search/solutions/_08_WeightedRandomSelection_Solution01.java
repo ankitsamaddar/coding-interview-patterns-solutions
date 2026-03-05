@@ -19,6 +19,7 @@
 
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 /* ── Solution ─────────────────────────────────────────────── */
 
@@ -39,7 +40,8 @@ class Solution {
   }
 
   public int pickIndex() {
-    int target = random.nextInt(totalSum) + 1;
+    // int target = random.nextInt(totalSum) + 1;
+    int target = ThreadLocalRandom.current().nextInt(1, totalSum + 1);
 
     int l = 0, r = prefixSums.length - 1;
     while (l < r) {
