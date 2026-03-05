@@ -4,4 +4,7 @@
 You have a sorted array of unique integers and a target value. Return the index of the target if it exists. If it does not, return the index where it would be inserted to maintain sorted order.
 2. [First and Last Occurrences of a Number](<02-first-and-last-occurrences-of-a-number.md>) : Given an array of integers sorted in non-decreasing order, find the starting and ending position of a given target value. If the target is not found in the array, return `[-1, -1]`.
 3. [Search in Rotated Sorted Array](<03-search-in-rotated-sorted-array.md>) :
+4. [Search a 2D Matrix](<04-search-a-2d-matrix.md>) : You are given an $m \times n$ matrix where each row is sorted in non-decreasing order. The first integer of each row is greater than or equal to the last integer of the previous row. Given a target integer, determine if it exists in the matrix.
+
 Given an array of unique integers sorted in ascending order that has been rotated at an unknown pivot, write a function to search for a target value. If the target exists, return its index. If not, return -1.
+
