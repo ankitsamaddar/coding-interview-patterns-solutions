@@ -6,6 +6,7 @@ You have a sorted array of unique integers and a target value. Return the index 
 3. [Search in Rotated Sorted Array](<03-search-in-rotated-sorted-array.md>) :
 4. [Search a 2D Matrix](<04-search-a-2d-matrix.md>) : You are given an $m \times n$ matrix where each row is sorted in non-decreasing order. The first integer of each row is greater than or equal to the last integer of the previous row. Given a target integer, determine if it exists in the matrix.
 5. [Cutting Wood](<05-cutting-wood.md>) : You are given an array of tree heights and a target amount of wood $k$. You need to set a blade height $H$ for your woodcutter. The machine cuts the top off every tree taller than $H$. You want to find the maximum integer height $H$ that allows you to cut at least $k$ meters of wood.
+6. [Local Maxima in Array](<06-local-maxima-in-array.md>) : You need to find the index of any local maxima in an array. A local maxima is an element strictly greater than its immediate neighbors. For elements at the boundaries of the array, assume the neighbor outside the array is smaller. The array is guaranteed to have no adjacent duplicates.
 
 Given an array of unique integers sorted in ascending order that has been rotated at an unknown pivot, write a function to search for a target value. If the target exists, return its index. If not, return -1.
 
