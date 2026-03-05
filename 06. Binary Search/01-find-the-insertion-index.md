@@ -4,7 +4,6 @@
 > Space Limit: 256 MB
 > Link: [LeetCode 35. Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
-
 ## Description
 
 You have a sorted array of unique integers and a target value. Return the index of the target if it exists. If it does not, return the index where it would be inserted to maintain sorted order.
@@ -22,18 +21,18 @@ Explanation: 6 is not in the array. It should be inserted at index 4, between 5 
 ```
 
 **Constraints**:
-- $1 \leq \text{{nums.length}} \leq 10^4$
-- $-10^4 \leq \text{{nums[i]}} \leq 10^4$
+- $1 \leq \text{nums.length} \leq 10^4$
+- $-10^4 \leq \text{nums[i]} \leq 10^4$
 - `nums` contains distinct values sorted in ascending order.
-- $-10^4 \leq \text{{target}} \leq 10^4$
+- $-10^4 \leq \text{target} \leq 10^4$
 
 **Code Template**:
 ```java
-class Solution {{
-    public int searchInsert(int[] nums, int target) {{
+class Solution {
+    public int searchInsert(int[] nums, int target) {
         // Implementation goes here
-    }}
-}}
+    }
+}
 ```
 
 **Hint**: Look for the first element that is greater than or equal to the target.
@@ -45,44 +44,44 @@ class Solution {{
 
 **Code (Stage 1: Direct Translation)**:
 ```java
-class Solution {{
-    public int searchInsert(int[] nums, int target) {{
+class Solution {
+    public int searchInsert(int[] nums, int target) {
         int left = 0;
         int right = nums.length;
 
-        while (left < right) {{
+        while (left < right) {
             int mid = left + (right - left) / 2;
 
-            if (nums[mid] >= target) {{
+            if (nums[mid] >= target) {
                 // The lower bound is at mid or to the left.
                 right = mid;
-            }} else {{
+            } else {
                 // The target is to the right of mid.
                 left = mid + 1;
-            }}
-        }}
+            }
+        }
 
         return left;
-    }}
-}}
+    }
+}
 ```
 
 **Code (Stage 2: Idiomatic)**:
 ```java
 import java.util.Arrays;
 
-class Solution {{
-    public int searchInsert(int[] nums, int target) {{
+class Solution {
+    public int searchInsert(int[] nums, int target) {
         int index = Arrays.binarySearch(nums, target);
 
-        if (index >= 0) {{
+        if (index >= 0) {
             return index;
-        }}
+        }
 
         // If not found, binarySearch returns (-(insertion point) - 1)
         return -(index + 1);
-    }}
-}}
+    }
+}
 ```
 
 > The idiomatic solution uses the Java standard library. `Arrays.binarySearch` is highly optimized and reduces the risk of implementation errors. While the manual implementation is essential for understanding the algorithm, the library method is preferred for production code due to its reliability and brevity.
