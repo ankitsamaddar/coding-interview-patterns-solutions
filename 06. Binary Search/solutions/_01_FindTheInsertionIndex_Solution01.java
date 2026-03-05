@@ -6,7 +6,7 @@
  *
  * @approach Lower Bound Binary Search.
  *
- * @author myname
+ * @author ankitsamaddar
  * @date 2026-03-05
  *
  * Compile & Run: `javac _01_FindTheInsertionIndex_Solution01.java && Get-Content input.txt | java _01_FindTheInsertionIndex_Solution01 && rm -force _01_FindTheInsertionIndex_Solution01.class`
