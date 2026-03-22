@@ -6,8 +6,7 @@
 2. [Triplet Sum](<./01. Two Pointers/02-triplet-sum.md>) : Given an array of integers, find all unique triplets $[a, b, c]$ such that $a + b + c = 0$. The result must not contain duplicate triplets — `[1, 2, 3]` and `[2, 3, 1]` count as the same. Return an empty array if none exist.
 3. [Is Palindrome Valid](<./01. Two Pointers/03-is-palindrome-valid.md>) : Given a string that may contain letters, digits, spaces, and punctuation, decide if it reads the same forward and backward after stripping all non-alphanumeric characters. The comparison is case-insensitive.
 4. [Largest Container](<./01. Two Pointers/04-largest-container.md>) : You're given an array of integers where each value represents the height of a vertical line drawn at that position. Any two lines, along with the x-axis, form a container. Find the pair of lines that holds the most water and return that volume.
-
-
+5. [Shift Zeros to the End](<./01. Two Pointers/05-shift-zeros-to-the-end.md>) : You're given an integer array. Rearrange it in place so all zeros are at the end while the non-zero elements stay in their original relative order.
 
 ## 06. Binary Search
 
@@ -21,3 +20,4 @@
 6. [Local Maxima in Array](<./06. Binary Search/06-local-maxima-in-array.md>) : You need to find the index of any local maxima in an array. A local maxima is an element strictly greater than its immediate neighbors. For elements at the boundaries of the array, assume the neighbor outside the array is smaller. The array is guaranteed to have no adjacent duplicates.
 7. [Find the Median From Two Sorted Arrays](<./06. Binary Search/07-find-the-median-from-two-sorted-arrays.md>) : You are given two sorted integer arrays. Your task is to find their median value as if they were merged into a single sorted sequence. The overall run time complexity should be $O(\log (m+n))$.
 8. [Weighted Random Selection](<./06. Binary Search/08-weighted-random-selection.md>) : You are given an array of positive integers called `weights`. You need to implement a class that picks an index from this array randomly. The probability of picking a specific index should be proportional to its weight. Specifically, the probability of picking index $i$ is $\frac{{weights[i]}}{{\sum weights}}$.
+
